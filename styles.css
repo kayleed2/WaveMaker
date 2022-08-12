@@ -32,10 +32,20 @@
   
   .burgerspan::before {
     transform: translateY(-8px);
+    position: absolute;
   }
   
   .burgerspan::after {
     transform: translateY(8px);
+    position: absolute;
+  }
+
+  div.clicked > .burgerspan::before{
+      transform: rotate(45deg);
+  }
+  
+  div.clicked > .burgerspan::after {
+    transform: rotate(-45deg);
   }
 
 .burgerbtn {
@@ -50,4 +60,16 @@
 .social-icons img {
     width: 1rem;
     height: 1rem;
+}
+    
+.mt-120 {
+    margin-top: 120px;
+}
+
+.invisible {
+  display: none;
+}
+
+.visable {
+  display: block !important;
 }
