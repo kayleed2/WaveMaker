@@ -33,10 +33,20 @@
   
   .burgerspan::before {
     transform: translateY(-8px);
+    position: absolute;
   }
   
   .burgerspan::after {
     transform: translateY(8px);
+    position: absolute;
+  }
+
+  div.clicked > .burgerspan::before{
+      transform: rotate(45deg);
+  }
+  
+  div.clicked > .burgerspan::after {
+    transform: rotate(-45deg);
   }
 
 .burgerbtn {
@@ -44,6 +54,14 @@
     width: 50px;
 }
 
-.mt-75 {
-  margin-top: 75px;
+.mt-120 {
+  margin-top: 120px;
+}
+
+.invisible {
+  display: none;
+}
+
+.visable {
+  display: block !important;
 }
