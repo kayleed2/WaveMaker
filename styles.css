@@ -1,0 +1,7 @@
+/* Base */
+  
+:root {
+    --accent-lightblue: rgba(134, 159, 176, 0.85);
+    --card-color: rgba(134, 159, 176, 0.27);
+    --accent-darkblue: rgba(47, 97, 117, 1);
+}
