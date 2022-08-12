@@ -1,3 +1,12 @@
+<<<<<<< HEAD
+/* Base */
+  
+:root {
+    --accent-lightblue: rgba(134, 159, 176, 0.85);
+    --card-color: rgba(134, 159, 176, 0.27);
+    --accent-darkblue: rgba(47, 97, 117, 1);
+}
+
 .logo {
     height: 50px;
     width: 50px;
@@ -33,4 +42,8 @@
 .burgerbtn {
     height: 50px;
     width: 50px;
+}
+
+.mt-75 {
+  margin-top: 75px;
 }
