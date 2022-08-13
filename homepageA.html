@@ -12,47 +12,44 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles.css">
     <script rel="stylesheet" src="./something.js"></script>
 </head>
 <body>
-    <nav class="container d-flex container justify-content-between align-items-center">
+    <nav class="container d-flex container justify-content-between align-items-center mb-1">
         <img src="images/wavemakerIcon.png" class="logo">
+        <div class="row no-row mr-4">
+            <a href="#home" class="text-accent-darkblue col-2">HOME</a>
+            <a href="#data" class="text-accent-darkblue col-2">DATA</a>
+            <a href="#expand" class="text-accent-darkblue col-2">EXPAND</a>
+            <a href="#expand" class="text-accent-darkblue col-2 mr-4">COACHING</a>
+            <a href="#brand" class="text-accent-darkblue col-2">BRAND</a>
+        </div>
         <div class="burgerbtn d-flex justify-content-center align-items-center" id="drop" onclick="dropMenu()">
-            <span class="burgerspan"></span>
-            <ul class="nav drop mt-120 no-display" id="dropdown">
-                <li> <a href="#" class="text-white">HOME</a></li>
-                <li> <a href="#" class="text-white">DATA</a></li>
-                <li> <a href="#" class="text-white">EXPAND</a></li>
-                <li> <a href="#" class="text-white">BRAND</a></li>
+            <span class="burgerspan ml-burger" id="spanburger"></span>
+            <ul class="nav drop mt-175 no-display z1" id="dropdown">
+                <li> <a href="#home" class="text-white">HOME</a></li>
+                <li> <a href="#data" class="text-white">DATA</a></li>
+                <li> <a href="#expand" class="text-white">EXPAND</a></li>
+                <li> <a href="#expand" class="text-white">COACHING</a></li>
+                <li> <a href="#brand" class="text-white">BRAND</a></li>
             </ul>
         </div>
     </nav>
-    <div class="hero-section bg-image d-flex flex-column text-white justify-content-center align-items-center" style="
+    <div class=" bg-primary hero-section bg-image d-flex flex-column text-white justify-content-center align-items-center divz" style="
         background-image: url('./images/waves_hero.jpg');
         height: 60vh;
         background-size: cover;
         background-position: center;
-        opacity: 80%;">
+        opacity: 80%;"  id="home">
     <h1 class="text-center display-2 font-weight-bold">Make Waves</h1>
     <p class="font-weight-bold">Impact - Influence - Inspire</p>
-    <button type="button" class="btn btn-secondary font-weight-bold border-0" style="background-color: var(--accent-lightblue);">Start Now</button>
-    </div>
-    <div class="cont2 d-flex flex-column w-25 m-3">
-        <span style="font-family: var(--font-ssp-bold); color: #FFFFFF; font-size: .8rem;">TOPIC</span>
-            <div class="dropdown show">
-                <button class="btn-lg w-100 border-0 d-flex align-items-center justify-content-between" id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: rgba(255, 255, 255, .25); height: 3rem;">
-                    <div id="place" style="font-family: var(--font-ssp-light); color:#FFFFFF;">Novice</div>
-                    <div class="dropdown-toggle p-0 m-0" style="font-family: var(--font-ssp-light); font-size: 23px; color: #FFFFFF;"></div>
-                </button>
-                <div class="dropdown-menu w-100" id="drops" aria-labelledby="dropdownMenuLink">
-                </div>
-            </div>
+    <button type="button" class="btn btn-secondary font-weight-bold border-0" style="background-color: var(--accent-lightblue);" id="startbtn">Start Now</button>
     </div>
     <!-- Carousel 0-->
-    <div class="container-fluid bg-purp">
+    <div class="container-fluid bg-purp mt-3 mb-5" id="data">
         <div class="container">
             <div id="caro" class="carousel slide" data-ride="carousel" data-interval="false">
+
                 <!-- Indicators -->
             <ul class="carousel-indicators">
                 <li data-target="#caro" data-slide-to="0" class="active"></li>
@@ -62,7 +59,7 @@
             
             <!-- The slideshow -->
             <div class="carousel-inner">
-                <div class="text-center"><h2>the impact of influencers</h2></div>
+                <div class="text-center mt-3"><h2 class="font-weight-bold">the impact of influencers</h2></div>
                 <div class="carousel-item active">
                     <div class="d-flex justify-content-center m-5">
                         <img src="images/influencer-stats1.png" alt="inluenceData" class="ml-3 mr-3 caro-img">
@@ -93,28 +90,96 @@
             </div>
         </div>
     </div>
-    <div class="coaching-section d-flex flex-column text-center justify-content-center align-items-center p-4" style="background-color: var(--accent-darkblue);">
-        <h2 class="text-white font-weight-bold">Paired with the best in the business.</h2>
-        <div class="card w-75 m-1">branding</div>
-        <div class="card w-75 m-1">latest trends</div>
-        <div class="card w-75 m-1">content creation</div>
-        <div class="card w-75 m-1">timing</div>
-        <div class="card w-75 m-1">outreach</div>
+    <div class="coaching-section d-flex flex-column text-center justify-content-center align-items-center p-4" id="expand" style="background-color: var(--accent-darkblue);">
+        <h2 class="text-white font-weight-bold mt-3 mb-4">Paired with the best in the business.</h2>
+        <div id="accordion" class="w-75 d-flex flex-column justify-content-center align-items-center">
+            <div class="card m-1 mt-4 w-75">
+              <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn w-100" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <h3 class="font-weight-bold m-0">branding</h3>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card m-1 w-75">
+              <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                  <button class="btn font-weight-bold collapsed w-100" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    <h3 class="font-weight-bold m-0">latest trends</h3>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card m-1 w-75">
+              <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                  <button class="btn font-weight-bold collapsed w-100" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h3 class="font-weight-bold m-0">content creation</h3>
+                  </button>
+                </h5>
+              </div>
+              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div class="card-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="card m-1 w-75">
+                <div class="card-header" id="headingFour">
+                  <h5 class="mb-0">
+                    <button class="btn font-weight-bold collapsed w-100" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <h3 class="font-weight-bold m-0">timing</h3>
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                  <div class="card-body">
+                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                  </div>
+                </div>
+            </div>
+          <div class="card m-1 mb-4 w-75">
+            <div class="card-header" id="headingFive">
+              <h5 class="mb-0">
+                <button class="btn font-weight-bold collapsed w-100" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    <h3 class="font-weight-bold m-0">outreach</h3>
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+              <div class="card-body">
+                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+              </div>
+            </div>
+          </div>
+      </div>
     </div>
-    <div class="encompassing-section d-flex flex-column align-items-center">
-        <div class="network-section d-flex align-items-center m-3 mt-4">
+    <div class="encompassing-section d-flex flex-column align-items-center mb-4" id="brand">
+        <h2 class="font-weight-bold mt-5 mb-3">from tide to tidal</h2>
+        <div class="network-section d-flex align-items-center m-3 mt-4" id="shadow">
             <div class="bg w-100 p-3 d-flex align-items-center justify-content-around" style="background-color: var(--card-color);">
                 <img src="./images/waves_network.png" style="width:10em; height:10em;" alt="">
                 <p class="text-right font-weight-bold">connect with influencers across the globe</p>
             </div>
         </div>
-        <div class="platform-section d-flex align-items-center m-3">
+        <div class="platform-section d-flex align-items-center m-3" id="shadow1">
             <div class="bg w-100 p-3 d-flex flex-row-reverse align-items-center justify-content-around" style="background-color: var(--card-color);">
                 <img src="./images/waves_socialpic.png" style="width:10em; height:10em;" alt="">
                 <p class="text-left font-weight-bold">make cross platform work for you</p>
             </div>
         </div>
-        <div class="grow-section d-flex align-items-center m-3 mb-4">
+        <div class="grow-section d-flex align-items-center m-3 mb-4" id="shadow2">
             <div class="bg w-100 p-3 d-flex align-items-center justify-content-around" style="background-color: var(--card-color);">
                 <img src="./images/raiseMoney.png" style="width:10em; height:10em;" alt="">
                 <p class="text-right font-weight-bold">grow your reach and brand</p>
@@ -122,7 +187,7 @@
         </div>
     </div>
     <div class="lighthouse-section d-flex flex-column text-center justify-content-center align-items-center p-4" style="background-color: var(--accent-darkblue);">
-        <div class="d-flex flex-column text-center justify-content-center align-items-center p-4 text-white" style="background-color: var(--card-color);">
+        <div class="d-flex flex-column text-center justify-content-center align-items-center p-4 text-white shadow" style="background-color: var(--card-color);">
             <h2 class="font-weight-bold">let us be your lighthouse.</h2>
             <img src="./images/waves_lighthouse.png" class="p-2" style="width:10em; height:10em;" alt="">
             <h3 class="font-weight-bold">we connect you with brands that fit YOU</h3>
@@ -144,7 +209,5 @@
             </div>
         </div>
     </footer>
-</body>
-</html>
 </body>
 </html>
