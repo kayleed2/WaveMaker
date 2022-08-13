@@ -113,5 +113,5 @@
 }
 
 .carousel-indicators li {
-  background-color: var(--accent-darkblue);
+  background-color: var(--accent-darkblue) !important;
 }
