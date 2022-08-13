@@ -6,11 +6,19 @@
     --accent-darkblue: rgba(47, 97, 117, 1);
 }
 
+#accordion .card-header:hover {
+    opacity: 50%;
+    background-color: var(--accent-lightblue);
+}
+
+button h3 {
+    color: var(--accent-darkblue);
+}
 
 /* NAV BAR */
 .logo {
-    height: 75px;
-    width: 75px;
+    height: 8%;
+    width: 8%;
 }
 
 @media (min-width: 450px) {

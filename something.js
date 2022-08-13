@@ -11,3 +11,41 @@ const dropMenu = function () {
   }
 }
 
+$(document).ready(function() {
+  // executes when HTML-Document is loaded and DOM is ready
+   
+ 
+   $( "#shadow" ).hover(
+   function() {
+     $(this).addClass('shadow-lg').css('cursor', 'pointer'); 
+   }, function() {
+     $(this).removeClass('shadow-lg');
+   }
+ );
+
+  $( "#shadow1" ).hover(
+  function() {
+    $(this).addClass('shadow-lg').css('cursor', 'pointer'); 
+  }, function() {
+    $(this).removeClass('shadow-lg');
+  }
+);
+
+$( "#shadow2" ).hover(
+  function() {
+    $(this).addClass('shadow-lg').css('cursor', 'pointer'); 
+  }, function() {
+    $(this).removeClass('shadow-lg');
+  }
+);
+
+
+$( "#startbtn" ).hover(
+  function() {
+    $(this).addClass('shadow-lg').css('cursor', 'pointer'); 
+  }, function() {
+    $(this).removeClass('shadow-lg');
+  }
+);
+ });
+
