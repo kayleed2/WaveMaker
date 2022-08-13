@@ -1,13 +1,16 @@
 const dropMenu = function () {
   const dropDown = document.getElementById('dropdown');
   const burgerDiv = document.getElementById('drop')
+  const burgerSpan = document.getElementById('spanburger');
   console.log(burgerDiv);
   if ($(dropDown).hasClass('no-display')) {
     $(dropDown).removeClass('no-display');
     $(burgerDiv).addClass('clicked');
+    $(burgerSpan).removeClass('ml-burger');
   } else {
     $(dropDown).addClass('no-display');
     $(burgerDiv).removeClass('clicked');
+    $(burgerSpan).addClass('ml-burger');
   }
 }
 
