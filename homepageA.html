@@ -20,7 +20,7 @@
         <img src="images/wavemakerIcon.png" class="logo">
         <div class="burgerbtn d-flex justify-content-center align-items-center" id="drop" onclick="dropMenu()">
             <span class="burgerspan"></span>
-            <ul class="nav drop mt-120 invisible" id="dropdown">
+            <ul class="nav drop mt-120 no-display" id="dropdown">
                 <li> <a href="#" class="text-white">HOME</a></li>
                 <li> <a href="#" class="text-white">DATA</a></li>
                 <li> <a href="#" class="text-white">EXPAND</a></li>
@@ -28,6 +28,113 @@
             </ul>
         </div>
     </nav>
-    
+    <div class="hero-section bg-image d-flex flex-column text-white justify-content-center align-items-center" style="
+        background-image: url('./images/waves_hero.jpg');
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        opacity: 80%;">
+    <h1 class="text-center display-2 font-weight-bold">Make Waves</h1>
+    <p class="font-weight-bold">Impact - Influence - Inspire</p>
+    <button type="button" class="btn btn-secondary font-weight-bold border-0" style="background-color: var(--accent-lightblue);">Start Now</button>
+    </div>
+    <!-- Carousel 0-->
+    <div class="container-fluid bg-purp">
+        <div class="container">
+            <div id="caro" class="carousel slide" data-ride="carousel" data-interval="false">
+
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                <li data-target="#caro" data-slide-to="0" class="active"></li>
+                <li data-target="#caro" data-slide-to="1"></li>
+                <li data-target="#caro" data-slide-to="2"></li>
+            </ul>
+            
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="text-center"><h2>the impact of influencers</h2></div>
+                <div class="carousel-item active">
+                    <div class="d-flex justify-content-center m-5">
+                        <img src="images/influencer-stats1.png" alt="inluenceData" class="ml-3 mr-3 caro-img">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center m-5">
+                        <img src="images/influencer-stats2.png" alt="inluenceData" class="ml-3 mr-3 caro-img">
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="d-flex justify-content-center m-5">
+                        <img src="images/influencer-stats3.png" alt="inluenceData" class="ml-3 mr-3 caro-img">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#caro" data-slide="prev">
+                <span class="carousel-control-prev-icon mr-5"></span>
+            </a>
+            <a class="carousel-control-next" href="#caro" data-slide="next">
+                <span class="carousel-control-next-icon ml-5"></span>
+            </a>
+            
+            </div>
+        </div>
+    </div>
+    <div class="coaching-section d-flex flex-column text-center justify-content-center align-items-center p-4" style="background-color: var(--accent-darkblue);">
+        <h2 class="text-white font-weight-bold">Paired with the best in the business.</h2>
+        <div class="card w-75 m-1">branding</div>
+        <div class="card w-75 m-1">latest trends</div>
+        <div class="card w-75 m-1">content creation</div>
+        <div class="card w-75 m-1">timing</div>
+        <div class="card w-75 m-1">outreach</div>
+    </div>
+    <div class="encompassing-section d-flex flex-column align-items-center">
+        <div class="network-section d-flex align-items-center m-3 mt-4">
+            <div class="bg w-100 p-3 d-flex align-items-center justify-content-around" style="background-color: var(--card-color);">
+                <img src="./images/waves_network.png" style="width:10em; height:10em;" alt="">
+                <p class="text-right font-weight-bold">connect with influencers across the globe</p>
+            </div>
+        </div>
+        <div class="platform-section d-flex align-items-center m-3">
+            <div class="bg w-100 p-3 d-flex flex-row-reverse align-items-center justify-content-around" style="background-color: var(--card-color);">
+                <img src="./images/waves_socialpic.png" style="width:10em; height:10em;" alt="">
+                <p class="text-left font-weight-bold">make cross platform work for you</p>
+            </div>
+        </div>
+        <div class="grow-section d-flex align-items-center m-3 mb-4">
+            <div class="bg w-100 p-3 d-flex align-items-center justify-content-around" style="background-color: var(--card-color);">
+                <img src="./images/raiseMoney.png" style="width:10em; height:10em;" alt="">
+                <p class="text-right font-weight-bold">grow your reach and brand</p>
+            </div>
+        </div>
+    </div>
+    <div class="lighthouse-section d-flex flex-column text-center justify-content-center align-items-center p-4" style="background-color: var(--accent-darkblue);">
+        <div class="d-flex flex-column text-center justify-content-center align-items-center p-4 text-white" style="background-color: var(--card-color);">
+            <h2 class="font-weight-bold">let us be your lighthouse.</h2>
+            <img src="./images/waves_lighthouse.png" class="p-2" style="width:10em; height:10em;" alt="">
+            <h3 class="font-weight-bold">we connect you with brands that fit YOU</h3>
+        </div>
+    </div>
+    <footer>
+        <div class="bg p-3 d-flex align-items-center justify-content-around">
+            <div class="logo align-self-center">
+                <img src="./images/wavemakerIcon.png" style="width: 2rem; height: 2rem;" alt="">
+            </div>
+            <div class="copyright align-self-end small" style="opacity: 50%; color: var(--accent-darkblue);">
+                <span>©wavemaker 2022</span> 
+            </div>
+            <div class="social-icons align-self-start">
+               <a href="#"><img src="images/waves_fb.png" alt=""></a>
+               <a href="#"><img src="images/waves_insta.png" alt=""></a>
+               <a href="#"><img src="images/waves_twitter.png" alt=""></a>
+               <a href="#"><img src="images/waves_youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
 </body>
 </html>

@@ -18,6 +18,14 @@
   .burgerspan {
     display: none;
   }
+
+  .no-display {
+    display: inline !important;
+  }
+
+  ul.no-display li {
+    display: inline !important;
+  }
 }
 
 .burgerspan {
@@ -77,10 +85,17 @@
     margin-top: 120px;
 }
 
-.invisible {
+.no-display {
   display: none;
 }
 
 .visable {
   display: block !important;
+}
+
+/* Caro */
+
+.caro-img {
+  width: 380px;
+  height: 260px
 }
