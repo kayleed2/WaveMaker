@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Waves</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="d-flex container justify-content-between align-items-center mb-2">
+        <img src="images/wavemakerIcon.png" class="logo">
+        <div class="burgerbtn d-flex justify-content-center align-items-center" onclick="">
+            <span class="burgerspan"></span>
+        </div>
+    </nav>
+    <div class="hero-section bg-image d-flex flex-column text-white justify-content-center align-items-center" style="
+        background-image: url('./images/waves_hero.jpg');
+        height: 60vh;
+        background-size: cover;
+        background-position: center;
+        opacity: 80%;">
+    <h1 class="text-center display-2 font-weight-bold">Make Waves</h1>
+    <p class="font-weight-bold">Impact - Influence - Inspire</p>
+    <button type="button" class="btn btn-secondary font-weight-bold border-0" style="background-color: var(--accent-lightblue);">Start Now</button>
+    </div>
+    <div class="data-section d-flex flex-column text-center justify-content-center align-items-center m-4">
+        <h2 class="font-weight-bold">the impact of influencers</h2>
+        <div>
+           <img src="images/waves_data1.png" style="width:16em; height:10em;" alt="">
+        </div>
+    </div>
+    <div class="coaching-section d-flex flex-column text-center justify-content-center align-items-center p-4" style="background-color: var(--accent-darkblue);">
+        <h2 class="text-white font-weight-bold">Paired with the best in the business.</h2>
+        <div class="card w-75 m-1">branding</div>
+        <div class="card w-75 m-1">latest trends</div>
+        <div class="card w-75 m-1">content creation</div>
+        <div class="card w-75 m-1">timing</div>
+        <div class="card w-75 m-1">outreach</div>
+    </div>
+    <div class="encompassing-section d-flex flex-column align-items-center">
+        <div class="network-section d-flex align-items-center m-3 mt-4">
+            <div class="bg w-100 p-3 d-flex align-items-center justify-content-around" style="background-color: var(--card-color);">
+                <img src="./images/waves_network.png" style="width:10em; height:10em;" alt="">
+                <p class="text-right font-weight-bold">connect with influencers across the globe</p>
+            </div>
+        </div>
+        <div class="platform-section d-flex align-items-center m-3">
+            <div class="bg w-100 p-3 d-flex flex-row-reverse align-items-center justify-content-around" style="background-color: var(--card-color);">
+                <img src="./images/waves_socialpic.png" style="width:10em; height:10em;" alt="">
+                <p class="text-left font-weight-bold">make cross platform work for you</p>
+            </div>
+        </div>
+        <div class="grow-section d-flex align-items-center m-3 mb-4">
+            <div class="bg w-100 p-3 d-flex align-items-center justify-content-around" style="background-color: var(--card-color);">
+                <img src="./images/raiseMoney.png" style="width:10em; height:10em;" alt="">
+                <p class="text-right font-weight-bold">grow your reach and brand</p>
+            </div>
+        </div>
+    </div>
+    <div class="lighthouse-section d-flex flex-column text-center justify-content-center align-items-center p-4" style="background-color: var(--accent-darkblue);">
+        <div class="d-flex flex-column text-center justify-content-center align-items-center p-4 text-white" style="background-color: var(--card-color);">
+            <h2 class="font-weight-bold">let us be your lighthouse.</h2>
+            <img src="./images/waves_lighthouse.png" class="p-2" style="width:10em; height:10em;" alt="">
+            <h3 class="font-weight-bold">we connect you with brands that fit YOU</h3>
+        </div>
+    </div>
+    <footer>
+        <div class="bg p-3 d-flex align-items-center justify-content-around">
+            <div class="logo align-self-center">
+                <img src="./images/wavemakerIcon.png" style="width: 2rem; height: 2rem;" alt="">
+            </div>
+            <div class="copyright align-self-end small" style="opacity: 50%; color: var(--accent-darkblue);">
+                <span>©wavemaker 2022</span> 
+            </div>
+            <div class="social-icons align-self-start">
+               <a href="#"><img src="images/waves_fb.png" alt=""></a>
+               <a href="#"><img src="images/waves_insta.png" alt=""></a>
+               <a href="#"><img src="images/waves_twitter.png" alt=""></a>
+               <a href="#"><img src="images/waves_youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
