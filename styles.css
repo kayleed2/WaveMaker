@@ -99,3 +99,19 @@
   width: 380px;
   height: 260px
 }
+
+.carousel-control-next-icon {
+  background-image: url(images/right-arrow.png) !important;
+  height: 35px !important;
+  width:35px !important;
+}
+
+.carousel-control-prev-icon {
+  background-image: url(images/left-arrow.png) !important;
+  height: 35px !important;
+  width:35px !important;
+}
+
+.carousel-indicators li {
+  background-color: var(--accent-darkblue);
+}
