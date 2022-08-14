@@ -164,3 +164,7 @@ button h3 {
 .text-color-darkaccent {
   color: var(--accent-darkblue);
 }
+
+.pricing {
+  border-width: 25px;
+}
