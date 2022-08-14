@@ -113,6 +113,10 @@ button h3 {
     height: 1rem;
 }
     
+
+.mt-100 {
+  margin-top: 100px;
+}
 .mt-175 {
     margin-top: 175px;
 }
@@ -146,4 +150,17 @@ button h3 {
 
 .carousel-indicators li {
   background-color: var(--accent-darkblue) !important;
+}
+
+
+/* PRICING */
+
+/* CARDS */
+
+.bg-color-darkaccent {
+  background-color: var(--accent-darkblue);
+}
+
+.text-color-darkaccent {
+  color: var(--accent-darkblue);
 }
