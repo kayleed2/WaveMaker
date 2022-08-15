@@ -7,7 +7,7 @@
     <title>Make Waves</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Coiny&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles.css">
@@ -17,57 +17,135 @@
 <body>
     <nav class="container d-flex justify-content-between align-items-center mb-1">
         <img src="images/wavemakerIcon.png" class="logo">
-        <div class="row no-row mr-4">
-            <a href="./homepageA.html" class="text-accent-darkblue col-2">HOME</a>
-            <a href="./homepageA.html#data" class="text-accent-darkblue col-2">DATA</a>
-            <a href="./homepageA.html#coaching" class="text-accent-darkblue col-2">EXPAND</a>
-            <a href="./homepageA.html#expand" class="text-accent-darkblue col-2 mr-4">COACHING</a>
-            <a href="./homepageA.html#brand" class="text-accent-darkblue col-2">BRAND</a>
+        <div class="row flex-nowrap no-row align-items-center">
+            <a href="./homepage.html" class="text-accent-darkblue col-2">HOME</a>
+            <a href="./homepage.html#data" class="text-accent-darkblue col-2">DATA</a>
+            <a href="./homepage.html#coaching" class="text-accent-darkblue col-2">EXPAND</a>
+            <a href="./homepage.html#expand" class="text-accent-darkblue col-2 mr-4">COACHING</a>
+            <a href="./homepage.html#brand" class="text-accent-darkblue col-2">BRAND</a>
+            <a href="#signup"><button type="button" class="btn btn-secondary font-weight-bold border-0" style="background-color: var(--accent-lightblue);" id="startbtn">Start Now</button></a></li>
         </div>
         <div class="burgerbtn d-flex justify-content-center align-items-center" id="drop" onclick="dropMenu()">
             <span class="burgerspan ml-burger" id="spanburger"></span>
             <ul class="nav drop mt-175 no-display z1" id="dropdown">
-                <li> <a href="./homepageA.html#home" class="text-white">HOME</a></li>
-                <li> <a href="./homepageA.html#data" class="text-white">DATA</a></li>
-                <li> <a href="./homepageA.html#coaching" class="text-white">EXPAND</a></li>
-                <li> <a href="./homepageA.html#expand" class="text-white">COACHING</a></li>
-                <li> <a href="./homepageA.html#brand" class="text-white">BRAND</a></li>
+                <li> <a href="./homepage.html#home" class="text-white">HOME</a></li>
+                <li> <a href="./homepage.html#data" class="text-white">DATA</a></li>
+                <li> <a href="./homepage.html#coaching" class="text-white">EXPAND</a></li>
+                <li> <a href="./homepage.html#expand" class="text-white">COACHING</a></li>
+                <li> <a href="./homepage.html#brand" class="text-white">BRAND</a></li>
+                <a href="#signup"><button type="button" class="btn btn-secondary font-weight-bold border-0" style="background-color: var(--accent-lightblue);" id="startbtn">Start Now</button></a></li>
             </ul>
         </div>
     </nav>
     <div class=" bg-primary hero-section bg-image d-flex flex-column text-white justify-content-center align-items-center divz" style="
-        background-image: url('./images/waves_hero.jpg');
+        background-image: url('./images/waves_hero2.jpg');
         height: 60vh;
         background-size: cover;
         background-position: center;
         opacity: 80%;"  id="home">
     <h1 class="text-center display-2 font-weight-bold">Make Waves</h1>
     <p class="font-weight-bold">Impact - Influence - Inspire</p>
-    <button type="button" class="btn btn-secondary font-weight-bold border-0" style="background-color: var(--accent-lightblue);" id="startbtn">Start Now</button>
+    <a href="#signup"><button type="button" class="btn btn-secondary font-weight-bold border-0" style="background-color: var(--accent-lightblue);" id="startbtn">Start Now</button></a></li>
     </div>
-    <div class="container mt-5">
-        <h1 class="text-center mb-5">Pricing that fits <span class="text-color-darkaccent">your</span> needs</h1>
+    <div class="container mt-5 pricing" id="pricing">
+        <h1 class="text-center mb-5">Pricing that fits <span class="text-color-darkaccent font-weight-bold">your</span> needs</h1>
         <div class="container-fluid row justify-content-center">
-            <div class="card mr-2 ml-2" style="width: 20rem;">
-                <h2 class="card-title text-center text-white bg-color-darkaccent">splash pack</h2>
-                <h4 class="text-center">$14.99 per month</h4>
+            <div class="card mr-4 ml-4 mt-4" style="width: 25rem;">
+                <h1 class="card-title text-center text-white bg-color-darkaccent">splash pack</h1>
+                <h2 class="text-center">$14.99 per month</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim convallis aenean et tortor. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Suspendisse ultrices gravida dictum fusce ut placerat.</p>
             </div>
-            <div class="card" style="width: 20rem;">
-                <h2 class="card-title text-center text-white bg-color-darkaccent">tide pack</h2>
-                <h4 class="text-center">$29.99 per month</h4>
+            <div class="card mr-4 ml-4 mt-4" style="width: 25rem;">
+                <h1 class="card-title text-center text-white bg-color-darkaccent">tide pack</h1>
+                <h2 class="text-center">$29.99 per month</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim convallis aenean et tortor. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Suspendisse ultrices gravida dictum fusce ut placerat.</p>
             </div>
-            <div class="card mr-2 ml-2" style="width: 20rem;">
-                <h2 class="card-title text-center text-white bg-color-darkaccent">surfs up pack</h2>
-                <h4 class="text-center">$49.99 per month</h4>
+            <div class="card mr-4 ml-4 mt-4" style="width: 25rem;">
+                <h1 class="card-title text-center text-white bg-color-darkaccent">surfs up pack</h1>
+                <h2 class="text-center">$49.99 per month</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim convallis aenean et tortor. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Suspendisse ultrices gravida dictum fusce ut placerat.</p>
             </div>
-            <div class="card" style="width: 20rem;">
-                <h2 class="card-title text-center text-white bg-color-darkaccent" style="border-bottom: 2px;">tidal pack</h2>
-                <h4 class="text-center">$89.99 per month</h4>
+            <div class="card mr-4 ml-4 mt-4" style="width: 25rem;">
+                <h1 class="card-title text-center text-white bg-color-darkaccent">tidal pack</h1>
+                <h2 class="text-center">$89.99 per month</h2>
                 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Dignissim convallis aenean et tortor. Blandit libero volutpat sed cras ornare arcu dui vivamus arcu. Suspendisse ultrices gravida dictum fusce ut placerat.</p>
             </div>
         </div>
     </div>
+    <div class="signup bg-color-darkaccent" id="signup">
+        <div class="container">
+            <h1 class="text-white text-center"><br>Sign up today!</h1>
+            <form class="text-white m-5" id="myForm">
+                <div class="form-group">
+                    <label for="email-input">Email address</label>
+                    <input type="email" class="form-control mb-0" id="email-input" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-white mt-0">We won't share your email, just your brand.</small>
+                </div>
+                <div class="form-group">
+                    <label for="firstname-input">First name</label>
+                    <input type="text" class="form-control" id="firstname-input" placeholder="First name">
+                </div>
+                <div class="form-group">
+                    <label for="lastname-input">Last name</label>
+                    <input type="text" class="form-control" id="lastname-input" placeholder="Last name">
+                </div>
+                <div class="form-group">
+                    <label for="pack-select-input">Choose your pack</label>
+                    <select class="form-control" id="pack-select">
+                        <option>splash</option>
+                        <option>tide</option>
+                        <option>surfs up</option>
+                        <option>tidal</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="platforms-input" aria-describedby="platformsHelp" class="mb-0">Platforms</label>
+                    <small id="platformsHelp" class="form-text text-white mt-0">Select all that apply</small>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="insta-check">
+                        <label class="form-check-label" for="insta-check">
+                            Instagram
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="fbook-check">
+                        <label class="form-check-label" for="fbook-check">
+                            Facebook
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="tik-check">
+                        <label class="form-check-label" for="tik-check">
+                            TikTok
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="ytube-check">
+                        <label class="form-check-label" for="ytube-check">
+                            Youtube
+                        </label>
+                    </div>
+                </div>
+
+                <input type="submit" id="submit-btn" class="btn btn-primary mt-2 mb-5"></input>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <div class="bg p-3 d-flex align-items-center justify-content-around">
+            <div class="logo align-self-center">
+                <img src="./images/wavemakerIcon.png" style="width: 2rem; height: 2rem;" alt="">
+            </div>
+            <div class="copyright align-self-end small" style="opacity: 50%; color: var(--accent-darkblue);">
+                <span>©wavemaker 2022</span> 
+            </div>
+            <div class="social-icons align-self-start">
+               <a href="#"><img src="images/waves_fb.png" alt=""></a>
+               <a href="#"><img src="images/waves_insta.png" alt=""></a>
+               <a href="#"><img src="images/waves_twitter.png" alt=""></a>
+               <a href="#"><img src="images/waves_youtube.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
 </body>
