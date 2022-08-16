@@ -7,8 +7,8 @@ class User(Base):
     __tablename__ = "User"
 
     id = Column(Integer, primary_key=True)
+    email = Column(String(128))
     firstName = Column(String(128))
     lastName = Column(String(128))
-    email = Column(String(128))
-    age = Column(Integer)
+    package = Column(String(128))
     platform = Column(String(128))

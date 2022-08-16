@@ -12,7 +12,6 @@ session = Session()
 user = User()
 user.firstName = 'Kaylee'
 user.lastName = 'Dao'
-user.age = 25
 user.email = 'kayleed2@gmail.com'
 user.platform = 'Instagram'
 session.add(user)
