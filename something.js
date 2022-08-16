@@ -59,17 +59,25 @@ const saveFile = function () {
   let firstName = $('#firstname-input').val();
   let lastName = $('#lastname-input').val();
   let package = $('#pack-select').val();
-  var selected = [];
+  var platforms = [];
   $('input:checked').each(function() {
-    selected.push($(this).attr('name'));
+    platforms.push($(this).attr('name'));
 });
-let user = {}
+let user = {};
 user["email"] = email;
 user["firstName"] = firstName;
 user["lastName"] = lastName;
 user["package"] = package;
-user["platforms"] = selected;
-localStorage.setItem('User', user);
+user["platforms"] = platforms;
+
+$("#myForm").submit(function(event) {
+  event.preventDefault(); //prevent default action 
+  let post_url = $(this).attr("action"); //get form action url
+  $.get("./user.html", user, function(response) {
+    $("#server-results").html(response);
+  });
+});
+
 Cookies.set('firstname', firstName, { expires: 14, path: '' });
 Cookies.set('email', email, { expires: 14, path: '' });
 Cookies.set('lastname', lastName, { expires: 14, path: '' });
